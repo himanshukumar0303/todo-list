@@ -1,0 +1,165 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:rgb(223, 220, 220);
+}
+header{
+  width: 100%;
+  padding: 1.5rem;
+  background-color: black;
+  color: darkorange;
+}
+header span{
+  color: cyan;
+}
+#content-header{
+  padding: 5px;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#search-box{
+  width: 40%;
+  margin: 2rem auto 1.1rem;
+  background-color: white;
+  padding: 15px;
+  transform: scale(1.1);
+  box-shadow: 1px 1px 2px 3px rgb(197, 195, 195);
+}
+#addText{
+  font-size: 1.3rem;
+  padding: 5px;
+  display:block;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom:1rem;
+}
+#addBtn{
+  padding: 8px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+  background-color:darkgreen;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom:1rem;
+}
+#saveBtn{
+  padding: 8px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+  background-color:darkgreen;
+  color: white;
+  font-size: 1.2rem;
+  display: none;
+}
+#deleteAll{
+  padding: 8px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+  background-color:red;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#list-box{
+  width: 44%;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+}
+
+.list-item{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+.list-item:nth-child(2n+1){
+  background-color: rgb(230, 220, 220);
+}
+.list-item input{
+  zoom: 1.5;
+  margin-right: 5px;
+  width: 5%;
+}
+.text{
+  font-size: 1.3rem;
+  color: black;
+  width: 65%;
+  word-wrap: break-word;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+.cmpltBtn{
+  font-size: 1rem;
+  background-color: darkblue;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+  margin: 10px;
+
+}
+.dltBtn{
+  font-size: 1rem;
+  background-color: red;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+}
+
+/* media query */
+
+@media screen and (max-width:900px){
+  #search-box{
+    width: 100%;
+    margin: 2rem auto 1.1rem;
+    transform: none;
+  }
+  #list-box{
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+  }
+  .cmpltBtn{
+    font-size: 1rem;
+    background-color: darkblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    width: 15%;
+  
+  }
+  .dltBtn{
+    font-size: 1rem;
+    background-color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    width: 15%;
+  }
+
+}
